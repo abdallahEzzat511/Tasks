@@ -1,1 +1,26 @@
+let myString = "Hello JavaScript";
+let myNumber = 42;
+let myBoolean = true;
+let myNull = null;
+let myUndefined; 
 
+
+console.log(myString);
+console.log(myNumber);
+console.log(myBoolean);
+console.log(myNull);
+console.log(myUndefined);
+
+console.log(typeof myString);     
+console.log(typeof myNumber);    
+console.log(typeof myBoolean);    
+console.log(typeof myNull);        
+
+console.log(typeof myUndefined);  
+
+let firstName = "Abdallah";
+let lastName = "Ezzat";
+
+console.log(firstName + " " + lastName);
+
+console.log(`${firstName} ${lastName}`);
