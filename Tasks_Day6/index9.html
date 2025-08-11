@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK_FORM</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      form {
+        margin-bottom: 20px;
+      }
+      input,
+      select {
+        padding: 5px;
+        margin: 5px;
+      }
+      button {
+        padding: 5px 10px;
+        margin: 5px;
+        cursor: pointer;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 10px;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      #searchInput {
+        width: 250px;
+        padding: 6px;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Item Form</h2>
+    <form id="itemForm">
+      <input type="text" id="name" placeholder="Enter Name" required />
+      <input
+        type="text"
+        id="description"
+        placeholder="Enter Description"
+        required
+      />
+      <select id="category" required>
+        <option value="">Select Category</option>
+        <option value="Category A">Category A</option>
+        <option value="Category B">Category B</option>
+        <option value="Category C">Category C</option>
+      </select>
+      <button type="submit" id="submitBtn">Add</button>
+    </form>
+
+    <h3>Search Items</h3>
+    <input type="text" id="searchInput" placeholder="Type to search..." />
+
+    <h3>Item List</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Category</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="itemTable"></tbody>
+    </table>
+
+    <script src="main9.js"></script>
+  </body>
+</html>
