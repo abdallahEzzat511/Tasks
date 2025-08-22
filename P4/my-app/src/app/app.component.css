@@ -1,0 +1,83 @@
+/* --- General Reset --- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* --- Navbar --- */
+.navbar {
+  padding: 15px 0;
+  transition: all 0.3s ease;
+}
+.navbar .nav-link {
+  color: #ddd !important;
+  font-weight: 500;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* --- About Section --- */
+#about {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+#about h2 {
+  font-weight: 700;
+}
+#about .card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#about .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Contact Section --- */
+#contact {
+  background: #fff;
+}
+#contact h2 {
+  font-weight: 700;
+  color: #0d6efd;
+}
+#contact .form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 12px;
+}
+#contact .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+}
+#contact button {
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+#contact button:hover {
+  background: #0b5ed7;
+  transform: translateY(-2px);
+}
+
+/* --- Footer --- */
+footer {
+  background: #212529;
+}
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+footer a {
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #0d6efd;
+}

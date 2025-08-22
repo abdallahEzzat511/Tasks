@@ -1,0 +1,46 @@
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form class="row g-3" (ngSubmit)="submitForm()">
+      <div class="col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Your Name"
+          [(ngModel)]="name"
+          name="name"
+        />
+      </div>
+      <div class="col-md-6">
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Your Email"
+          [(ngModel)]="email"
+          name="email"
+        />
+      </div>
+      <div class="col-12">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Subject"
+          [(ngModel)]="subject"
+          name="subject"
+        />
+      </div>
+      <div class="col-12">
+        <textarea
+          class="form-control"
+          rows="4"
+          placeholder="Your Message"
+          [(ngModel)]="message"
+          name="message"
+        ></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button class="btn btn-primary">Send</button>
+      </div>
+    </form>
+  </div>
+</section>
